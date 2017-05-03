@@ -2,6 +2,11 @@
 
 An extended [Promise](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise) object implementing Node's [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) methods
 
+## Reasoning
+From time to time, I found myself in the need to combine the comfortable program flow that Promises offer (especially with `async`/`await`) with the verbose usefulness of events.
+
+My usual use case is the creation of CLI versions from functions I've wrote. Using this package, that can be done pretty easily.
+
 ## Install
 ```bash
 # With yarn
@@ -11,13 +16,7 @@ yarn add event-emitting-promise
 npm install --save event-emitting-promise
 ```
 
-## Reasoning
-From time to time, I found myself in the need to combine the comfortable program flow that Promises offer (especially with `async`/`await`) with the verbose usefulness of events.
-
-My usual use case is the creation of CLI versions from functions I've wrote. Using this package, that can be done pretty easily.
-
 ## Usage
-
 Let's say we want to create a programmatic and a CLI version of a function called `myFunc()`.
 
 Consider this the `my-func.js`:
