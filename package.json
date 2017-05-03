@@ -1,0 +1,21 @@
+{
+  "name": "event-emitting-promise",
+  "version": "0.0.0",
+  "description": "An extended Promise object implementing Node's EventEmitter methods",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loilo/node-event-emitting-promise.git"
+  },
+  "keywords": [
+    "events",
+    "eventemitter",
+    "promise"
+  ],
+  "author": "Florian Reuschel <florian@loilo.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Loilo/node-event-emitting-promise/issues"
+  },
+  "homepage": "https://github.com/Loilo/node-event-emitting-promise#readme"
+}
