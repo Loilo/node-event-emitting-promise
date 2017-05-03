@@ -24,7 +24,7 @@ Consider this the `my-func.js`:
 const EventEmittingPromise = require('event-emitting-promise')
 
 // Asynchronous partial tasks
-const { task1, } = require('./somewhere')
+const { task1, task2, task3 } = require('./somewhere')
 
 module.exports = function myFunc () {
   // The EventEmittingPromise constructor callback takes an
