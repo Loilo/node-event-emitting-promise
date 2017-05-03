@@ -1,6 +1,6 @@
 {
   "name": "event-emitting-promise",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "An extended Promise object implementing Node's EventEmitter methods",
   "main": "index.js",
   "repository": {
