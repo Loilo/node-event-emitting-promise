@@ -1,6 +1,6 @@
 # event-emitting-promise
 
-This package exposes an extended [Promise](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise) object, which additionally exposes the methods of an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter).
+An extended [Promise](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise) object implementing Node's [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) methods
 
 ## Install
 ```bash
