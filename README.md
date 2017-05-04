@@ -57,7 +57,7 @@ module.exports = function myFuncCLI () {
   return myFunc()
     // The created Promise provides all of the EventEmitter methods
     // (except emit) and allows chaining them.
-    .on('partial-done', (name, result) => {
+    .on('partial', (name, result) => {
       console.log(
         `Partial task ${name} has finished with result:`,
         result
