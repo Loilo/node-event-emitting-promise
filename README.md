@@ -31,19 +31,23 @@ module.exports = function myFunc () {
   // additional argument called "emit", which is the
   // EventEmitter.prototype.emit method.
   return new EventEmittingPromise(async (resolve, reject, emit) => {
-    const result1 = await task1
-    emit('partial', 'task1', result1)
+    try {
+      const result1 = await task1()
+      emit('partial', 'task1', result1)
 
-    const result2 = await task2
-    emit('partial', 'task2', result2)
+      const result2 = await task2()
+      emit('partial', 'task2', result2)
 
-    const result3 = await task3
-    emit('partial', 'task3', result3)
+      const result3 = await task3()
+      emit('partial', 'task3', result3)
 
-    return {
-      task1: result1,
-      task2: result2,
-      task3: result3
+      resolve({
+        task1: result1,
+        task2: result2,
+        task3: result3
+      })
+    } catch (err) {
+      reject(err)
     }
   })
 }
